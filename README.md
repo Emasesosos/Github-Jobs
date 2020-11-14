@@ -1,4 +1,4 @@
-# Weather App
+# Github Jobs
 
 ## Technologies Used
 
@@ -6,20 +6,18 @@
 
 ### Story
 
-- I can see city weather as default, preferably my current location
-- I can search for city
-- I can see weather of today and the next 5 days
-- I can see the date and location of the weather
-- I can see according to image for each type of weather
-- I can see the min and max degree each day
-- I can see wind status and wind direction
-- I can see humidity percentage
-- I can see visibility indicator
-- I can see air pressure number
-- I can request my current location weather
-- I can convert temperature in Celcius to Fahrenheit and vice versa
+- I can see a list of jobs in a city by default
+- I can search for jobs with a given keyword
+- I can search for jobs with a city name, zip code or other location
+- I can select one option from at least 4 pre-defined options
+- I can search for a full-time job only
+- I can see a list of jobs with their logo, company name, location, and posted time.
+- I select a job, I can see job descriptions and how to apply like the given design.
+- I am on the job details page, I can go back to the search page
+- I can see a list of jobs in the closest city from my location by default
+- I can see jobs in different pages, 5 items each page
 
 #### Challenge Powered By
 - [DevChallenges](https://devchallenges.io/)
 - [Figma](https://www.figma.com/)
-- [Weather API](https://www.metaweather.com/api/)
+- [GitHub Jobs API](https://jobs.github.com/api)
