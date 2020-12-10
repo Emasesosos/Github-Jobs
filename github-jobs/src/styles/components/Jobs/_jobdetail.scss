@@ -1,0 +1,21 @@
+.jobDetail__contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+.jobDetail__job-descripcion {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-bottom: 32px;
+    padding: 15px;
+}
+
+@media screen and (min-width: $tablet) {
+    .jobDetail__job-descripcion {
+        flex-direction: row;
+    }
+}

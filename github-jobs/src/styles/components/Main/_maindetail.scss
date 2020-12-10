@@ -1,0 +1,116 @@
+.mDetail__descripcion-info {
+    margin-bottom: 32px;
+}
+
+.mDetail__titulo {
+    color: #334680;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 32px 0;
+    padding: 0; 
+    span {
+        border: 1px solid #334680;
+        border-radius: 4px;
+        font-size: 12px;
+        height: 26px;
+        margin-top: 10px;
+        padding: 6px 8px; 
+        width: 68px;
+    }  
+}
+
+.mDetail__titulo-tiempo {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: $tablet) {
+    .mDetail__titulo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .mDetail__titulo span {
+        margin-left: 25px;
+    }
+    .mDetail__titulo-tiempo {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.mDetail__info-icono-titulo {
+    align-items: flex-end;
+    color: #B7BCCE;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 9.5px;
+    position: relative;
+    p {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 4px;
+        left: 30px;
+    }
+}
+
+.w-100 {
+    width: 100px;
+}
+
+.mDetail__name-company {
+    display: flex;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mDetail__job-img.wh-img {
+    height: 50px;
+    width: 50px;
+}
+
+.mDetail__job-img-company.wh-img {
+    height: 50px;
+    width: 50px;
+}
+
+.mDetail__company-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    span {
+        color: #334680;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.fl-1 {
+    flex: 1;
+}
+
+.mt-0 {
+    margin: 0;
+}
+
+.mDetail__texto {
+    color: #334680;
+    font-size: 16px;
+}
