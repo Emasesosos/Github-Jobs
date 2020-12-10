@@ -1,0 +1,56 @@
+.hero__contenedor {
+    align-items: center;
+    background-image: url('./../../../assets/backgroundImg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: flex;
+    height: 138px;
+    justify-content: center;
+    margin: 0 10px;
+    form.hero__buscador {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.hero__buscador-search {
+    position: relative;
+    width: 790px;
+    .material-icons {
+        font-size: 22px;
+    }
+    .hero__wo {
+        left: 20px;
+        position: absolute;
+        top: 16px;
+    }
+    input.hero__search-job {
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        height: 55px;
+        outline: none;
+        padding-left: 50px;
+        width: 100%;
+    }
+    .hero__boton {
+        background: #1E86FF;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        height: 47px;
+        outline: none;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        width: 146px;
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}

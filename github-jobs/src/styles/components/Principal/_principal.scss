@@ -1,0 +1,12 @@
+.principal__contenedor {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: $tablet) {
+    .principal__contenedor {
+        flex-direction: row;
+    }
+}

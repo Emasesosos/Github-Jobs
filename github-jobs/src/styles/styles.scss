@@ -1,5 +1,17 @@
 /* GENERAL */
+
 @import './base/settings';
 @import './base/base';
+
 /* COMPONENTS */
+
 @import './components/home';
+@import './components/Header/header';
+@import './components/Hero/hero';
+@import './components/Principal/principal';
+@import './components/Aside/aside';
+@import './components/Main/main';
+@import './components/Jobs/jobs';
+@import './components/Jobs/jobcard';
+@import './components/Pagination/pagination';
+@import './components/Footer/footer';

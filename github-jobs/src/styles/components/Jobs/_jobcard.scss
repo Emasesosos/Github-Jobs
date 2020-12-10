@@ -1,0 +1,121 @@
+.job__contenedor {
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    /* cursor: pointer; */
+    display: flex;
+    height: 147px;
+    margin-bottom: 15px;
+    padding-top: 12px;
+    width: 100%
+}
+
+@media screen and (min-width: $tablet) {
+    .job__contenedor {
+        align-items: center;
+        height: 114px;
+        padding: 0;
+    }
+}
+
+.job__job-img {
+    align-items: center;
+    background-color: #B9BDCF;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    margin-left: 12px;
+    margin-right: 16px;
+    width: 90px;
+    .job__job-img-company {
+        border-radius: 4px;
+        height: 90px;
+        width: 90px;
+    }
+}
+
+.job__job-info-location {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .job__job-info-location {
+        flex: 1;
+        flex-direction: row;
+    }
+}
+
+.job__job-info {
+    margin-bottom: 20px;
+    flex: 0 0 60%;
+}
+
+.job__company {
+    margin: 0 0 8px 0;
+}
+
+.job__company,
+.job__schedule {
+    color: #334680;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.job__vacancy {
+    color: #334680;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0 14px 0;
+}
+
+@media screen and (min-width: $tablet) {
+    .job__vacancy {
+        font-size: 18px;
+    }
+}
+
+.job__schedule {
+    align-items: center;
+    border: 1px solid #334680;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    height: 26px;
+    justify-content: center;
+    width: 63px;
+}
+
+.job__job-location {
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .job__job-location {
+        align-items: flex-end;
+        flex: 1;
+        justify-content: space-around;
+    }
+}
+
+.job__info-icono {
+    align-items: flex-end;
+    color: #B7BCCE;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    i {
+        margin-right: 10px;
+    }
+}

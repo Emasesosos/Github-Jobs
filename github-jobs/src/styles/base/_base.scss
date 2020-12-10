@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500;700&display=swap');
 html,
 body {
     box-sizing: border-box;
@@ -11,15 +11,13 @@ body {
 }
 
 * {
-    font-family: 'Raleway', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    align-items: center;
-    background-color: #FAFAFB;
-    display: flex;
-    justify-content: center;
-    position: relative;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }

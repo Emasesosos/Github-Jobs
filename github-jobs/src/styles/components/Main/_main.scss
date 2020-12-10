@@ -1,0 +1,11 @@
+.main__main {
+    flex: 1;
+    margin: 0;
+    padding-top: 32px;
+}
+
+@media screen and (min-width: $tablet) {
+    .main__main {
+        margin-left: 32px;
+    }
+}
