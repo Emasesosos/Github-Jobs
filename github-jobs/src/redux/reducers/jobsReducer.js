@@ -10,7 +10,7 @@ export function jobsReducer(state = initialState, action) {
         case types.MAKE_REQUEST:
             return {
                 jobs: [],
-                loading: true,
+                loading: true
             }
         case types.GET_DATA:
             return {
