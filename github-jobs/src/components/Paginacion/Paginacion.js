@@ -33,14 +33,14 @@ export const Paginacion = () => {
     return (
         
         <div className="paginacion__contenedor">
-            <ul class="paginacion">
-                { pagePag !== 1 && <li onClick={ () => handlePageBack(-1)} >*</li> }
+            <ul className="paginacion">
+                { pagePag !== 1 && <li className="material-icons" onClick={ () => handlePageBack(-1)} >keyboard_arrow_left</li> }
                 { pagePag !== 1 && <li onClick={ () => handlePageIni(1)} >1</li> }
                 { pagePag > 2 && <li onClick={ () => handlePageBack(-1)} >{pagePag - 1}</li> }
                 <li className="active">{ pagePag }</li>
                 { (pagePag > 2 && pagePag <= pageNumbers.length - 1) && <li> . . . </li> }
                 { pageNumbers[pagePag] && <li onClick={ () => handlePageNext(1)} >{ pagePag + 1  }</li> }
-                { pageNumbers[pagePag] && <li onClick={ () => handlePageNext(1)} >*</li> }
+                { pageNumbers[pagePag] && <li className="material-icons paginacion__next" onClick={ () => handlePageNext(1)} >keyboard_arrow_right</li> }
             </ul>
         </div>
        

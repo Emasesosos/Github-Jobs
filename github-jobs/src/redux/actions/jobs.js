@@ -1,9 +1,17 @@
 import { types } from './../types/types';
 
-export const makeRequest = () => {
+export const makeRequestGeneral = () => {
 
     return {
-        type: types.MAKE_REQUEST
+        type: types.MAKE_REQUEST_GENERAL
+    };
+
+};
+
+export const makeRequestParams = () => {
+
+    return {
+        type: types.MAKE_REQUEST_PARAMS
     };
 
 };

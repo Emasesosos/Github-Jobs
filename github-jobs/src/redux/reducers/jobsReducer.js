@@ -7,7 +7,12 @@ const initialState = {
 export function jobsReducer(state = initialState, action) {
 
     switch (action.type) {
-        case types.MAKE_REQUEST:
+        case types.MAKE_REQUEST_GENERAL:
+            return {
+                jobs: [],
+                loading: true
+            }
+        case types.MAKE_REQUEST_PARAMS:
             return {
                 jobs: [],
                 loading: true

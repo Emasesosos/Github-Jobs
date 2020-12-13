@@ -1,6 +1,7 @@
 export const types = {
 
-    MAKE_REQUEST: 'make-request',
+    MAKE_REQUEST_GENERAL: 'make-request-general',
+    MAKE_REQUEST_PARAMS: 'make-request-params',
     GET_DATA: 'get-data',
     ERROR: 'error',
 
