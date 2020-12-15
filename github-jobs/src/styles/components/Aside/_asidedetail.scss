@@ -1,11 +1,12 @@
 .aDetail__aside-descripcion {
-    flex: 0 0 30%;
+    width: 100%;
     margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
     .aDetail__aside-descripcion {
         margin-bottom: 0;
+        width: 25%;
     }
 }
 
@@ -33,7 +34,7 @@
 .arrow-ra {
     position: absolute;
     transform: rotate(180deg);
-    top: 5px;
+    top: -3px;
 }
 
 .aDetail__how-apply {
@@ -62,3 +63,4 @@
         color: #1E86FF;
     }
 }
+

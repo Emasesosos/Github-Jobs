@@ -1,9 +1,12 @@
 import React from 'react';
 import moment from 'moment';
+import { useSelector } from 'react-redux';
 
-export const MainDetail = ({ jobDetails }) => {
+export const MainDetail = () => {
 
-    const { created_at, location } = jobDetails;
+    const { jobDetails } = useSelector(state => state.jobDetails);
+
+    const { created_at, description, location } = jobDetails;
     const hoy = new Date();
     
     const fecha1 = moment(created_at);
@@ -37,14 +40,14 @@ export const MainDetail = ({ jobDetails }) => {
                     </div>
                 </div>
                 <div className="mDetail__name-company">
-                    <div className="mDetail__job-img m-0 wh-img">
+                    <div className="mDetail__job-img wh-img">
                         <img className="mDetail__job-img-company wh-img" src={jobDetails.company_logo} alt={jobDetails.company_logo} />
                     </div>
                     <div className="mDetail__company-info">
-                        <div className="mDetail__company mb-5 fl-1">
+                        <div className="mDetail__company">
                             <span>{jobDetails.company}</span>
                         </div>
-                        <div className="mDetail__info-icono-titulo mt-0 w-100">
+                        <div className="mDetail__info-icono-titulo">
                             <i className="material-icons md-dark md-inactive">public</i>
                             <p>{locacion}</p>
                         </div>
@@ -52,7 +55,7 @@ export const MainDetail = ({ jobDetails }) => {
                 </div>
             </div>
             <div className="mDetail__texto">
-                <p>{jobDetails.description}</p>
+                <p>{description}</p>
             </div>
         </main>
 

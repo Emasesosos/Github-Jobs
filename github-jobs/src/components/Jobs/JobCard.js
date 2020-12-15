@@ -46,7 +46,7 @@ export const JobCard = ({ job }) => {
                     <div className="job__info-time">
                         <i className="material-icons md-dark md-inactive">query_builder</i>
                         <p>
-                            {   dias === 0 ? 'today' 
+                            {   dias === 0 ? 'Today' 
                                 : dias === 1 ? `${dias} day ago` 
                                 : dias > 1 && dias <= 29 ? `${dias} days ago` 
                                 : dias === 30 || dias === 31 ? `1 month ago` 

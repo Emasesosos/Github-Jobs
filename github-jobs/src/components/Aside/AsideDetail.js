@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-export const AsideDetail = ({ jobDetails }) => {
+export const AsideDetail = () => {
+
+    const { jobDetails } = useSelector(state => state.jobDetails);
+    const { how_to_apply } = jobDetails;
 
     return (
 
@@ -19,7 +24,7 @@ export const AsideDetail = ({ jobDetails }) => {
             </div>
             <div className="aDetail__descripcion-how-apply">
                 <p>
-                    {jobDetails.how_to_apply}
+                    { how_to_apply }
                 </p>
             </div>
         </aside>

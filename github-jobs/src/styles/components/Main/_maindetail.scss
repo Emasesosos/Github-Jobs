@@ -1,3 +1,21 @@
+.mDetail__main-descripcion {
+    width: 100%;
+}
+
+@media screen and (min-width: $tablet) {
+    .mDetail__main-descripcion {
+        width: 75%;
+    }
+}
+
+.mDetail__job-img {
+    height: 50px;
+    width: 50px;
+    img {
+        width: 100%;
+    }
+}
+
 .mDetail__descripcion-info {
     margin-bottom: 32px;
 }
@@ -24,6 +42,11 @@
 .mDetail__titulo-tiempo {
     display: flex;
     flex-direction: column;
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: $tablet) {
@@ -65,16 +88,8 @@ h3 {
     }
 }
 
-.w-100 {
-    width: 100px;
-}
-
 .mDetail__name-company {
     display: flex;
-}
-
-.m-0 {
-    margin: 0;
 }
 
 .mDetail__job-img.wh-img {
@@ -98,19 +113,8 @@ h3 {
     }
 }
 
-.mb-5 {
-    margin-bottom: 5px;
-}
-
-.fl-1 {
-    flex: 1;
-}
-
-.mt-0 {
-    margin: 0;
-}
-
 .mDetail__texto {
     color: #334680;
     font-size: 16px;
 }
+
