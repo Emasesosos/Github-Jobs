@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-export const AsideDetail = () => {
+export const AsideDetail = ({ createMarkup }) => {
 
     const { jobDetails } = useSelector(state => state.jobDetails);
     const { how_to_apply } = jobDetails;
@@ -23,9 +22,10 @@ export const AsideDetail = () => {
                 <h4>HOW TO APPLY</h4>
             </div>
             <div className="aDetail__descripcion-how-apply">
-                <p>
-                    { how_to_apply }
-                </p>
+                <div
+                    className="htmlText"
+                    dangerouslySetInnerHTML={createMarkup(how_to_apply)}
+                />
             </div>
         </aside>
 

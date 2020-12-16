@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import { useSelector } from 'react-redux';
 
-export const MainDetail = () => {
+export const MainDetail = ({createMarkup}) => {
 
     const { jobDetails } = useSelector(state => state.jobDetails);
 
@@ -55,7 +55,10 @@ export const MainDetail = () => {
                 </div>
             </div>
             <div className="mDetail__texto">
-                <p>{description}</p>
+                <div
+                    className="htmlText"
+                    dangerouslySetInnerHTML={createMarkup(description)}
+                />
             </div>
         </main>
 

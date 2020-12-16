@@ -10,12 +10,15 @@ export const JobDetail = (props) => {
 
     const dispatch = useDispatch();
 
+    const createMarkup = (description) => {
+        return { __html: `${description}` };
+    };
+
     const jobId = props.match.params.jobId;
     const state = useSelector(state => state.githubJobs);
     const { jobs } = state;
     if(!jobs) return null;
     const findJob = jobs.find(job => job.id === jobId);
-
     dispatch(guardarJob(findJob));
 
     return (
@@ -24,8 +27,12 @@ export const JobDetail = (props) => {
             <div className="jobDetail__contenedor">
                 <Header />
                 <div className="jobDetail__job-descripcion">
-                    <AsideDetail />
-                    <MainDetail />
+                    <AsideDetail 
+                        createMarkup={ createMarkup }
+                    />
+                    <MainDetail 
+                        createMarkup={ createMarkup }
+                    />
                 </div>
                 <Footer />   
             </div>

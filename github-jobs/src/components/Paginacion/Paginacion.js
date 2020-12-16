@@ -34,13 +34,13 @@ export const Paginacion = () => {
         
         <div className="paginacion__contenedor">
             <ul className="paginacion">
-                { pagePag !== 1 && <li className="material-icons" onClick={ () => handlePageBack(-1)} >keyboard_arrow_left</li> }
-                { pagePag !== 1 && <li onClick={ () => handlePageIni(1)} >1</li> }
-                { pagePag > 2 && <li onClick={ () => handlePageBack(-1)} >{pagePag - 1}</li> }
-                <li className="active">{ pagePag }</li>
-                { (pagePag > 2 && pagePag <= pageNumbers.length - 1) && <li> . . . </li> }
-                { pageNumbers[pagePag] && <li onClick={ () => handlePageNext(1)} >{ pagePag + 1  }</li> }
-                { pageNumbers[pagePag] && <li className="material-icons paginacion__next" onClick={ () => handlePageNext(1)} >keyboard_arrow_right</li> }
+                { pagePag !== 1 && <li className="material-icons pag" onClick={ () => handlePageBack(-1)} >keyboard_arrow_left</li> }
+                { pagePag !== 1 && <li className="pag" onClick={ () => handlePageIni(1)} >1</li> }
+                { pagePag > 2 && <li className="pag" onClick={ () => handlePageBack(-1)} >{pagePag - 1}</li> }
+                <li className="pag active">{ pagePag }</li>
+                { (pagePag > 2 && pagePag <= pageNumbers.length - 1) && <li className="pag"> . . . </li> }
+                { pageNumbers[pagePag] && <li className="pag" onClick={ () => handlePageNext(1)} >{ pagePag + 1  }</li> }
+                { pageNumbers[pagePag] && <li className="material-icons paginacion__next pag" onClick={ () => handlePageNext(1)} >keyboard_arrow_right</li> }
             </ul>
         </div>
        
