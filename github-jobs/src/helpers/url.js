@@ -1,2 +1,2 @@
-export const BASE_URL_G = 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json';
-export const BASE_URL_P = 'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json';
+export const BASE_URL_G = 'https://obscure-mesa-98003.herokuapp.com/https://jobs.github.com/positions.json';
+export const BASE_URL_P = 'https://obscure-mesa-98003.herokuapp.com/https://jobs.github.com/positions.json';
